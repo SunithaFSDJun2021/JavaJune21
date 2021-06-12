@@ -1,22 +1,36 @@
+/**Purpose: Create a calculator class to perform addition, subtraction, multiplication and division of two integers.
+ * Get inputs from command line/program arguments.
+ */
+
 package Week1Day1;
 
 public class SimpleCalculatorWithCommandLineArguments {
 
-	public static void main(String[] args) {
+	public static void main(String[] CmdlineArgs) {
 		
-		int a,b;
+		int firstNumber, secondNumber;
 		
-		a=Integer.parseInt(args[0]);
-		b=Integer.parseInt(args[1]);
+		try {
+		firstNumber=Integer.parseInt(CmdlineArgs[0]);
+		secondNumber=Integer.parseInt(CmdlineArgs[1]);
 		
-		System.out.println(a);
-		System.out.println(b);
+		System.out.println(firstNumber);
+		System.out.println(secondNumber);
 		
-		System.out.println("Result of addition for the two supplied command line arguments is: " + (a+b));
-		System.out.println("Result of subtraction for the two supplied command line arguments is: " + (a-b));
-		System.out.println("Result of multiplication for the two supplied command line arguments is: " + (a*b));
-		System.out.println("Result of division for the two supplied command line arguments is: " + (a/b));
-
+		System.out.println("Result of addition for the two supplied command line arguments is: " + (firstNumber+secondNumber));
+		System.out.println("Result of subtraction for the two supplied command line arguments is: " + (firstNumber-secondNumber));
+		System.out.println("Result of multiplication for the two supplied command line arguments is: " + (firstNumber*secondNumber));
+		System.out.println("Result of division for the two supplied command line arguments is: " + (firstNumber/secondNumber));
+		}
+		
+		  catch (ArrayIndexOutOfBoundsException E) {
+		  System.out.println("No command line arguments supplied"); }
+		 
+		
+		  catch (NumberFormatException E) {
+		  System.out.println("Please supply only integer values as arguments"); }
+		 
+		}
 	}
 
-}
+
