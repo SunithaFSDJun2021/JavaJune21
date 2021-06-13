@@ -4,9 +4,9 @@ public class CountFirstOccurrenceofVowelsInString_Method3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String input="NeeeeewyorkE";
+		String input1="NeeeeewyorkE";
 		String lowCaseInput;
-		lowCaseInput=input.toLowerCase();
+		lowCaseInput=input1.toLowerCase();
 		System.out.println(lowCaseInput);
 		
 		int len=lowCaseInput.length();
@@ -27,7 +27,7 @@ public class CountFirstOccurrenceofVowelsInString_Method3 {
 					duplicateflag[j]=true;
 			}			
 		}
-		System.out.println("The count of vowels from the string:"+"'"+ input + "'"+ " after removing duplicates are: "+ count);		
+		System.out.println("The count of vowels from the string:"+"'"+ input1 + "'"+ " after removing duplicates are: "+ count);		
 	}
 	}
 
