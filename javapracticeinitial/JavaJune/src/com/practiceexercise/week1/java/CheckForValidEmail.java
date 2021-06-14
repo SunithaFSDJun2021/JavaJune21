@@ -1,4 +1,5 @@
-/**7. Email Validation. Output is false if the validation fails else true. String input1="test@gmail.com" 
+/**7. Email Validation. Output is false if the validation fails else true. 
+ * String input="test@gmail.com" 
  * 1)@ & . should be present; 
  * 2)@ & . should not be repeated; 
  * 3)there should be four characters between @ and .; 
